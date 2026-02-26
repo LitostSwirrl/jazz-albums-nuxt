@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   app: {
-    baseURL: '/jazz-albums-recommender/',
+    baseURL: '/jazz-albums-nuxt/',
     head: {
       title: 'Jazz Albums Recommender',
       meta: [
@@ -22,4 +22,7 @@ export default defineNuxtConfig({
     strict: true,
   },
   ssr: false,
+  nitro: {
+    preset: 'github-pages',
+  },
 })
